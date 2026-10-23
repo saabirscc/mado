@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MADO Somalia · pick a direction</title>
+<meta name="theme-color" content="#f6f0e7">
+<link rel="icon" href="../brand/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Poppins:wght@400;500;600;700;900&display=swap">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; background: #f6f0e7; color: #171411; font: 400 16px/1.55 Poppins, system-ui, sans-serif; padding: clamp(24px, 5vw, 64px) clamp(16px, 4vw, 48px);
+    background-image: radial-gradient(60% 50% at 85% 0%, rgba(205,165,68,.16), transparent 70%); }
+  header { display: flex; align-items: flex-end; gap: 22px; flex-wrap: wrap; margin-bottom: 12px; }
+  header img { height: 70px; width: auto; }
+  h1 { margin: 0 0 4px; font: 500 clamp(2.2rem, 5.5vw, 4rem)/1 "Cormorant Garamond", Georgia, serif; letter-spacing: -.01em; }
+  h1 i { color: #8a7650; }
+  .lead { margin: 12px 0 34px; color: #5d5446; max-width: 66ch; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 22px; }
+  a.card { position: relative; display: grid; grid-template-rows: auto 1fr; border-radius: 24px; overflow: hidden; text-decoration: none; color: inherit; border: 1px solid #e2d6c4; background: #fffdf9; transition: transform .35s cubic-bezier(.22,1,.36,1), border-color .3s, box-shadow .35s; }
+  a.card:hover { transform: translateY(-6px); border-color: #8a7650; box-shadow: 0 30px 60px -30px rgba(138,118,80,.5); }
+  a.card:focus-visible { outline: 3px solid #cda544; outline-offset: 4px; }
+  .thumb { position: relative; aspect-ratio: 16 / 10; overflow: hidden; background: #15110b; }
+  .thumb iframe { position: absolute; left: 0; top: 0; width: 400%; height: 400%; transform: scale(.25); transform-origin: 0 0; border: 0; pointer-events: none; }
+  .b .thumb { background: #f6f0e7; }
+  .thumb.app { display: grid; place-items: center; background: radial-gradient(60% 70% at 50% 40%, #2a2216, #15110b 70%); }
+  .phone { width: 34%; aspect-ratio: 9 / 18; border-radius: 22px; border: 3px solid #000; background: #f6f0e7; display: grid; place-items: center; box-shadow: 0 24px 40px -18px rgba(0,0,0,.7); }
+  .phone img { width: 64%; height: auto; }
+  .body { padding: 18px 20px 22px; }
+  .tag { font: 700 .72rem Poppins; letter-spacing: .2em; text-transform: uppercase; color: #8a7650; }
+  h2 { margin: 6px 0 6px; font: 500 2.1rem/1 "Cormorant Garamond", Georgia, serif; }
+  .b h2 { font: 900 1.9rem/1 Poppins, sans-serif; letter-spacing: -.05em; text-transform: uppercase; }
+  p { margin: 0; color: #4a4236; }
+  .go { display: inline-block; margin-top: 12px; font-weight: 700; color: #8a7650; }
+  .facts { margin-top: 40px; padding: 20px 22px; border-radius: 20px; border: 1px dashed #c9b48a; color: #5d5446; font-size: .92rem; max-width: 960px; }
+  .facts b { color: #171411; }
+  .facts p + p { margin-top: 8px; }
+  footer { margin-top: 28px; color: #8a7f6c; font-size: .85rem; }
+</style>
+</head>
+<body>
+<header><img src="../brand/logo-gold.png" alt="MADO · A real taste feast" width="1200" height="460"><h1>Two <i>directions</i></h1></header>
+<p class="lead">Two ways to put MADO Somalia on the web. Each has a sample of the menu (40 of their 300 items, with their prices and photos), their TikTok hits, catering &amp; events, and how to find them at Banadir Mall. Scroll each one all the way through, then pick one. Both link to the ordering and loyalty app.</p>
+<div class="grid">
+  <a class="card" href="a/">
+    <div class="thumb"><iframe src="a/?nointro" title="Preview A" loading="lazy" tabindex="-1"></iframe></div>
+    <div class="body"><span class="tag">A · 3D · cinematic</span><h2>A real taste feast</h2><p>A dark studio and a black-and-gold marble table. The long steel paddle pulls Maraş ice cream out of a brass tub and stretches it, then the MADO wordmark forms. Scroll and the table changes: breakfast, the grill, dondurma, baklava, Turkish coffee.</p><span class="go">Open A →</span></div>
+  </a>
+  <a class="card b" href="b/">
+    <div class="thumb"><iframe src="b/?nointro" title="Preview B" loading="lazy" tabindex="-1"></iframe></div>
+    <div class="body"><span class="tag">B · 3D · bold</span><h2>It doesn’t fall.</h2><p>MADO cream and olive-gold, giant type. The dondurma seller’s trick: the cone goes upside down on the rod, spins, and the ice cream stays. Tap it to see it again. Each chapter pops its dish onto a pedestal.</p><span class="go">Open B →</span></div>
+  </a>
+  <a class="card" href="../app/">
+    <div class="thumb app"><div class="phone"><img src="../brand/logo-gold.png" alt="" width="1200" height="460"></div></div>
+    <div class="body"><span class="tag">App</span><h2>Order in the app</h2><p>The MADO Somalia app: order ahead for pick-up, or scan the table code at Banadir Mall and order from your seat. Pay with EVC Plus or wallet credit, show your Pay QR, collect stars for free treats.</p><span class="go">Open the app →</span></div>
+  </a>
+</div>
+<div class="facts">
+  <p><b>What is real:</b> the wordmark and colours, every menu name, price and dish photo shown (from madomenu.online, VAT 5% as on that site), the subcategories, the address (Banadir Mall, 2nd floor, Zobe), the phone 061 207 1234, the TikTok account, its videos, views and covers, the kinds of events they cater (from their homepage), and MADO’s Kahramanmaraş story.</p>
+  <p><b>What is a placeholder:</b> the “Croissant - Plain” tile is a 3D render (they publish no photo); opening hours are not published, so none are shown; event packages and prices are not published; in the app, the wallet, top-up bonuses, stars and rewards, EVC merchant code and table numbers are demo values.</p>
+</div>
+<footer>Previews for MADO Somalia · Photos and prices: MADO Somalia · 3D modelled in code with three.js; HDRI and croissant scan: Poly Haven (CC0)</footer>
+</body>
+</html>
